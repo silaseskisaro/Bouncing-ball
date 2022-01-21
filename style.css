@@ -1,0 +1,47 @@
+body{
+  background:#101010;
+  height:100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+
+/* .boxing{
+  background:conic-gradient(red,blue,green);
+  width:500px;
+  height:200px;
+  margin-top:100px;
+  
+} */
+.ball{
+  position:absolute;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:radial-gradient(white,purple, red);
+}
+
+.bounce{
+  animation:bounce 3.14s linear 0s infinite alternate;
+}
+.bounceA{
+  animation:bounceA 1.03s ease-in 0s infinite alternate;
+}
+
+@keyframes bounce{
+  from{
+    transform:translateX(0px);
+  }
+  to{
+    transform:translateX(calc(100vw-10vmin));
+  }
+}
+
+@keyframes bounceA{
+  from{
+    transform:translateY(0px);
+  }
+  to{
+    transform:translateY(calc(100vw-10vmin));
+  }
+}
